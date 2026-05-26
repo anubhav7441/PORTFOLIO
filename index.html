@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Anubhav Pandey — Portfolio</title>
+  <meta name="description" content="Portfolio of Anubhav Pandey — B.Tech IT student, Web Developer & Aspiring Data Scientist at MediCaps University." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Particle canvas -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="header-inner container">
+      <a class="brand" href="#home">
+        <span class="brand-icon">AP</span>
+        Anubhav Pandey
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a id="download-resume" class="btn btn-primary btn-sm" href="assets/Anubhav_Pandey_Resume.pdf" download>
+          <i class="fa-solid fa-download"></i> Resume
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile nav drawer -->
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="#home" class="mobile-link">Home</a>
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#skills" class="mobile-link">Skills</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#services" class="mobile-link">Services</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section id="home" class="hero container">
+      <div class="hero-left reveal">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> Hello, I'm</div>
+        <h1 class="hero-title">Anubhav <span class="gradient-text">Pandey</span></h1>
+        <p class="hero-role">
+          <span class="role-tag">Web Developer</span>
+          <span class="role-sep">·</span>
+          <span class="role-tag">Aspiring Data Scientist</span>
+          <span class="role-sep">·</span>
+          <span class="role-tag">DSA Enthusiast</span>
+        </p>
+        <p class="hero-desc">I craft captivating digital experiences — from clean frontend interfaces to data-driven solutions. Passionate about writing code that's both elegant and performant.</p>
+
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> View My Work</a>
+          <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-paper-plane"></i> Hire Me</a>
+        </div>
+
+        <div class="quick-links">
+          <a href="mailto:anubhav.7441@gmail.com" class="quick-link">
+            <i class="fa-solid fa-envelope"></i>
+            <span>anubhav.7441@gmail.com</span>
+          </a>
+          <a href="tel:+918435485686" class="quick-link">
+            <i class="fa-solid fa-phone"></i>
+            <span>+91 84354 85686</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-right reveal reveal-delay">
+        <div class="profile-card glass">
+          <div class="profile-photo-wrap">
+            <img src="anubhav_image.jpg" alt="Profile photo of Anubhav Pandey" class="profile-photo" loading="eager">
+            <div class="photo-glow"></div>
+          </div>
+
+          <div class="profile-info">
+            <h3 class="profile-name">Anubhav Pandey</h3>
+            <p class="profile-sub">B.Tech (IT) • MediCaps University</p>
+
+            <div class="profile-stats">
+              <div class="stat-item">
+                <span class="stat-value">7.8</span>
+                <span class="stat-label">CGPA</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-item">
+                <span class="stat-value">2027</span>
+                <span class="stat-label">Batch</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-item">
+                <span class="stat-value">3+</span>
+                <span class="stat-label">Projects</span>
+              </div>
+            </div>
+
+            <div class="profile-role-badge">
+              <i class="fa-solid fa-users"></i>
+              Co-Management Head, Maths Club
+            </div>
+
+            <div class="socials">
+              <a href="https://github.com/dashboard" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/anubhav-pandey-b49464333/" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="mailto:anubhav.7441@gmail.com" class="social-btn" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section container">
+      <div class="section-label reveal">About Me</div>
+      <h2 class="section-title reveal">My Background &amp; Journey</h2>
+
+      <div class="about-grid">
+        <div class="glass-card reveal">
+          <div class="card-icon-header">
+            <div class="card-icon"><i class="fa-solid fa-user"></i></div>
+            <h3>About Me</h3>
+          </div>
+          <p class="card-text">I'm a passionate B.Tech IT student in my 5th semester at MediCaps University. I enjoy building web apps, exploring data structures &amp; algorithms, and diving deep into data science workflows.</p>
+          <p class="card-text">Driven by clean UX, strong performance, and creative problem-solving — I'm always looking for the next challenge to grow as a developer.</p>
+
+          <div class="education-list">
+            <h4 class="list-title"><i class="fa-solid fa-graduation-cap"></i> Education</h4>
+            <div class="edu-item">
+              <div class="edu-dot"></div>
+              <div class="edu-content">
+                <strong>B.Tech — Information Technology</strong>
+                <span>MediCaps University &nbsp;·&nbsp; 2023–2027 &nbsp;·&nbsp; CGPA: 7.8</span>
+              </div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-dot"></div>
+              <div class="edu-content">
+                <strong>Higher Secondary (12th)</strong>
+                <span>Kendriya Vidyalaya Sidhi &nbsp;·&nbsp; 2022 &nbsp;·&nbsp; 79%</span>
+              </div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-dot"></div>
+              <div class="edu-content">
+                <strong>Secondary (10th)</strong>
+                <span>Kendriya Vidyalaya Sidhi &nbsp;·&nbsp; 2020 &nbsp;·&nbsp; 84%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card reveal reveal-delay">
+          <div class="card-icon-header">
+            <div class="card-icon"><i class="fa-solid fa-briefcase"></i></div>
+            <h3>Experience</h3>
+          </div>
+
+          <div class="exp-item">
+            <div class="exp-icon"><i class="fa-solid fa-code"></i></div>
+            <div class="exp-content">
+              <h4>Core CS Subjects</h4>
+              <p class="muted">Deep diving into Data Structures &amp; Algorithms, Operating Systems, Computer Networks, and Database Management Systems.</p>
+              <div class="exp-tags">
+                <span class="exp-tag">DSA</span>
+                <span class="exp-tag">OS</span>
+                <span class="exp-tag">CN</span>
+                <span class="exp-tag">DBMS</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-item">
+            <div class="exp-icon"><i class="fa-solid fa-users"></i></div>
+            <div class="exp-content">
+              <h4>Co-Management Head — Maths Club</h4>
+              <p class="muted">Leading event coordination, workshop organization, and club activities — fostering mathematical thinking across the university.</p>
+              <div class="exp-tags">
+                <span class="exp-tag">Leadership</span>
+                <span class="exp-tag">Events</span>
+                <span class="exp-tag">Mentoring</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section container">
+      <div class="section-label reveal">Expertise</div>
+      <h2 class="section-title reveal">Skills &amp; Technologies</h2>
+
+      <div class="skills-grid">
+        <div class="skill-card glass-card reveal">
+          <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+          <h4>Frontend</h4>
+          <p class="muted">HTML5 · CSS3 · JavaScript (ES6+)</p>
+          <div class="skill-bar">
+            <div class="skill-fill" data-pct="90"></div>
+          </div>
+          <span class="skill-pct">90%</span>
+        </div>
+
+        <div class="skill-card glass-card reveal reveal-delay">
+          <div class="skill-icon"><i class="fa-solid fa-server"></i></div>
+          <h4>Backend &amp; Database</h4>
+          <p class="muted">Node.js · Python · MySQL · MongoDB</p>
+          <div class="skill-bar">
+            <div class="skill-fill" data-pct="75"></div>
+          </div>
+          <span class="skill-pct">75%</span>
+        </div>
+
+        <div class="skill-card glass-card reveal reveal-delay-2">
+          <div class="skill-icon"><i class="fa-solid fa-terminal"></i></div>
+          <h4>Languages &amp; Tools</h4>
+          <p class="muted">C · C++ · Java · Git · VS Code · Figma</p>
+          <div class="skill-bar">
+            <div class="skill-fill" data-pct="82"></div>
+          </div>
+          <span class="skill-pct">82%</span>
+        </div>
+
+        <div class="skill-card glass-card reveal">
+          <div class="skill-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <h4>Data Science</h4>
+          <p class="muted">NumPy · Pandas · Matplotlib · Seaborn</p>
+          <div class="skill-bar">
+            <div class="skill-fill" data-pct="68"></div>
+          </div>
+          <span class="skill-pct">68%</span>
+        </div>
+
+        <div class="skill-card glass-card reveal reveal-delay">
+          <div class="skill-icon"><i class="fa-solid fa-diagram-project"></i></div>
+          <h4>Algorithms &amp; DSA</h4>
+          <p class="muted">Arrays · Trees · Graphs · DP · Sorting</p>
+          <div class="skill-bar">
+            <div class="skill-fill" data-pct="78"></div>
+          </div>
+          <span class="skill-pct">78%</span>
+        </div>
+
+        <div class="skill-card glass-card reveal reveal-delay-2">
+          <div class="skill-icon"><i class="fa-solid fa-palette"></i></div>
+          <h4>Design</h4>
+          <p class="muted">Figma · Responsive Design · UI/UX Basics</p>
+          <div class="skill-bar">
+            <div class="skill-fill" data-pct="70"></div>
+          </div>
+          <span class="skill-pct">70%</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section container">
+      <div class="section-label reveal">Portfolio</div>
+      <h2 class="section-title reveal">Featured Projects</h2>
+
+      <div class="projects-grid">
+        <article class="project-card glass-card reveal">
+          <div class="project-header">
+            <div class="project-icon"><i class="fa-solid fa-book-open"></i></div>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">SQLite</span>
+              <span class="tag">File I/O</span>
+            </div>
+          </div>
+          <h3>Library Management System</h3>
+          <p class="muted">A full-featured system to manage books, users, and lending flows. Emphasizes robust data structures, persistence, and a clean CLI/GUI interface built with Python.</p>
+          <div class="project-footer">
+            <a href="#" class="project-link"><i class="fa-brands fa-github"></i> View Code</a>
+            <a href="#" class="project-link accent"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          </div>
+        </article>
+
+        <article class="project-card glass-card reveal reveal-delay">
+          <div class="project-header">
+            <div class="project-icon"><i class="fa-solid fa-gamepad"></i></div>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Pygame</span>
+              <span class="tag">Game Dev</span>
+            </div>
+          </div>
+          <h3>Python Game</h3>
+          <p class="muted">An interactive game showcasing event handling, game loops, and simple AI logic built with Pygame. Demonstrates real-time rendering and game state management.</p>
+          <div class="project-footer">
+            <a href="#" class="project-link"><i class="fa-brands fa-github"></i> View Code</a>
+            <a href="#" class="project-link accent"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          </div>
+        </article>
+
+        <article class="project-card glass-card project-coming reveal reveal-delay-2">
+          <div class="coming-soon-inner">
+            <div class="plus-icon"><i class="fa-solid fa-plus"></i></div>
+            <h3>Coming Soon</h3>
+            <p class="muted">More exciting projects are in development. Stay tuned!</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section id="services" class="section container">
+      <div class="section-label reveal">What I Offer</div>
+      <h2 class="section-title reveal">Services</h2>
+
+      <div class="services-grid">
+        <div class="service-card glass-card reveal">
+          <div class="service-icon gradient-icon">
+            <i class="fa-solid fa-chart-bar"></i>
+          </div>
+          <h3>Data Science</h3>
+          <p class="muted">Data cleaning, exploratory analysis, visualization, and model prototyping using Python. Deliverables include notebooks, visual reports, and actionable insights.</p>
+          <ul class="service-list">
+            <li><i class="fa-solid fa-check"></i> EDA &amp; Visualization</li>
+            <li><i class="fa-solid fa-check"></i> Python (Pandas, NumPy)</li>
+            <li><i class="fa-solid fa-check"></i> Statistical Analysis</li>
+          </ul>
+        </div>
+
+        <div class="service-card glass-card reveal reveal-delay">
+          <div class="service-icon gradient-icon">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <h3>Frontend Development</h3>
+          <p class="muted">Responsive, accessible web apps using modern JavaScript — focused on performance, clean UI, and delightful user experience.</p>
+          <ul class="service-list">
+            <li><i class="fa-solid fa-check"></i> Responsive Design</li>
+            <li><i class="fa-solid fa-check"></i> HTML · CSS · JavaScript</li>
+            <li><i class="fa-solid fa-check"></i> UI/UX Best Practices</li>
+          </ul>
+        </div>
+
+        <div class="service-card glass-card reveal reveal-delay-2">
+          <div class="service-icon gradient-icon">
+            <i class="fa-solid fa-chalkboard-user"></i>
+          </div>
+          <h3>Tutoring &amp; Mentorship</h3>
+          <p class="muted">One-on-one tutoring in DSA, web fundamentals, placement prep, and project guidance tailored for college students.</p>
+          <ul class="service-list">
+            <li><i class="fa-solid fa-check"></i> DSA &amp; Problem Solving</li>
+            <li><i class="fa-solid fa-check"></i> Web Development Basics</li>
+            <li><i class="fa-solid fa-check"></i> Interview Preparation</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section container">
+      <div class="section-label reveal">Let's Connect</div>
+      <h2 class="section-title reveal">Get In Touch</h2>
+
+      <div class="contact-grid">
+        <form id="contact-form" class="glass-card contact-form reveal" novalidate>
+          <h3>Send a Message</h3>
+          <p class="muted" style="margin-bottom: 1.5rem;">Open to internships, freelance projects, and tutoring opportunities.</p>
+
+          <label class="form-group">
+            <span class="label-text"><i class="fa-solid fa-user"></i> Name</span>
+            <input type="text" name="name" id="name" placeholder="Your full name" required>
+          </label>
+
+          <label class="form-group">
+            <span class="label-text"><i class="fa-solid fa-envelope"></i> Email</span>
+            <input type="email" name="email" id="email" placeholder="you@example.com" required>
+          </label>
+
+          <label class="form-group">
+            <span class="label-text"><i class="fa-solid fa-message"></i> Message</span>
+            <textarea name="message" id="message" rows="5" placeholder="How can I help you?" required></textarea>
+          </label>
+
+          <div class="form-row">
+            <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+            <button type="reset" class="btn btn-outline">Reset</button>
+          </div>
+
+          <p id="form-status" class="form-status" aria-live="polite"></p>
+        </form>
+
+        <aside class="contact-info reveal reveal-delay">
+          <div class="glass-card contact-info-card">
+            <h3>Contact Info</h3>
+            <p class="muted">Feel free to reach out via any channel below. I usually respond within 24 hours.</p>
+
+            <div class="contact-items">
+              <div class="contact-item">
+                <div class="contact-item-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <span class="contact-item-label">Email</span>
+                  <a href="mailto:anubhav.7441@gmail.com" class="contact-item-value">anubhav.7441@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-item-icon"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <span class="contact-item-label">Phone</span>
+                  <a href="tel:+918435485686" class="contact-item-value">+91 84354 85686</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-item-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                <div>
+                  <span class="contact-item-label">LinkedIn</span>
+                  <a href="https://www.linkedin.com/in/anubhav-pandey-b49464333/" target="_blank" rel="noopener" class="contact-item-value">anubhav-pandey</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-item-icon"><i class="fa-brands fa-github"></i></div>
+                <div>
+                  <span class="contact-item-label">GitHub</span>
+                  <a href="https://github.com/dashboard" target="_blank" rel="noopener" class="contact-item-value">github.com/anubhav</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="availability-badge">
+              <span class="avail-dot"></span>
+              Available for Internships &amp; Freelance
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">© <span id="year"></span> <strong>Anubhav Pandey</strong> — Crafted with <i class="fa-solid fa-heart" style="color:#ff6b9d"></i> and code</p>
+      <div class="footer-socials">
+        <a href="https://github.com/dashboard" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/anubhav-pandey-b49464333/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:anubhav.7441@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
